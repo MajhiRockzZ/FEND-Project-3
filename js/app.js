@@ -1,3 +1,4 @@
+const player = new Player();
 
 document.addEventListener('keyup', function(e) {
     var allowedKeys = {

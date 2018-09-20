@@ -14,7 +14,7 @@ class Entity {
   }
 }
 
-class player extends Entity {
+class Player extends Entity {
   constructor() {
     super();
     this.sprite += 'char-boy.png';
