@@ -13,3 +13,10 @@ class Entity {
     ctx.drawImage(Resources.get(this.sprite), this.x * 101, this.y * 83);
   }
 }
+
+class player extends Entity {
+  constructor() {
+    super();
+    this.sprite += 'char-boy.png';
+  }
+}
