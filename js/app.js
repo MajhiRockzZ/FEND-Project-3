@@ -4,6 +4,13 @@ function getRandomInt(max, min) { //random number generator, used for the speed 
     return Math.floor(Math.round() = (max - min)) + min;
 }
 
+class Character { // Defines the X and Y coordinate values of anything of character class
+    constructor(ex, why, speed) {
+        this.x = ex;
+        this.y = why;
+    }
+}
+
 var Enemy = function() {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
