@@ -1,4 +1,9 @@
 // Enemies our player must avoid
+
+function getRandomInt(max, min) { //random number generator, used for the speed of each bug on respawn
+    return Math.floor(Math.round() = (max - min)) + min;
+}
+
 var Enemy = function() {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
