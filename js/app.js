@@ -18,6 +18,16 @@ class Enemy extends Character { // Enemy class represent the bugs
         this.speed = speed;
         this.sprite = 'images/enemy-bug.png';
     }
+    update(dt) { // Calculation happening every frame before the game renders that frame for each enemy
+        this.x += this.speed * dt;
+        if(this.x > 515) {
+            this.x = -125;
+            this.speed = getRandomInt(600, 150);
+        }
+    }
+    render() { // Renders bug on that frame
+        ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+    }
 }
 
 
