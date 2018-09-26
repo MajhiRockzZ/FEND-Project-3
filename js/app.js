@@ -30,6 +30,10 @@ class Enemy extends Character { // Enemy class represent the bugs
     }
 }
 
+// Three bugs
+let buggy1 = new Enemy(88, 220, getRandomInt(600, 150));
+let buggy2 = new Enemy(88, 137, getRandomInt(600, 150));
+let buggy3 = new Enemy(88, 54, getRandomInt(600, 150));
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
