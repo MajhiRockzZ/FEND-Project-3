@@ -35,6 +35,25 @@ let buggy1 = new Enemy(88, 220, getRandomInt(600, 150));
 let buggy2 = new Enemy(88, 137, getRandomInt(600, 150));
 let buggy3 = new Enemy(88, 54, getRandomInt(600, 150));
 
+class Player extends Character{ // The player's class
+  constructor() {
+    super();
+    this.sprite = 'images/char-boy.png';
+    this.x = 202;
+    this.y = 386;
+  }
+  update() {
+    for (let n = 0; n < 3; n++){
+      if (Math.abs(player.x - allEnemies[n].x) <= 81 && (player.y === allEnemies[n].y)) {
+        this.x = 202;
+        this.y = 386;
+      }
+    }
+  }
+  render() {
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+  }
+
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function(e) {
