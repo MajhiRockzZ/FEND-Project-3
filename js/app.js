@@ -1,6 +1,4 @@
 // Enemies our player must avoid
-"use strict";
-
 function getRandomInt(max, min) { //random number generator, used for the speed of each bug on respawn
     return Math.floor(Math.random() * (max - min)) + min;
 }
