@@ -2,7 +2,7 @@
 "use strict";
 
 function getRandomInt(max, min) { //random number generator, used for the speed of each bug on respawn
-    return Math.floor(Math.round() = (max - min)) + min;
+    return Math.floor(Math.round() * (max - min)) + min;
 }
 
 class Character { // Defines the X and Y coordinate values of anything of character class
